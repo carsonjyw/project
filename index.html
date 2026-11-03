@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e8e6df">
+  <meta name="description" content="ELSEWHERE: a New York City discovery experience that turns saved places and personal interests into adventures. A Design, Build, Ship project proposal.">
+  <title>ELSEWHERE — Project Proposal</title>
+  <style>
+    :root{--ink:#172721;--soft:#526057;--paper:#e8e6df;--card:#f6f5ef;--line:#bcbfb4;--orange:#f56636;--green:#cae3b8;--sans:Arial,Helvetica,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit}button{font:inherit}
+    .wrap{max-width:1360px;margin:auto;padding:0 5.2%}.top{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:22px;padding-bottom:20px;border-bottom:1px solid var(--ink)}.brand{font-size:18px;font-weight:900;letter-spacing:-.07em;text-decoration:none}.topright{display:flex;gap:24px;align-items:center;font-size:10px;text-transform:uppercase;letter-spacing:.16em;font-weight:800}.topright a{text-decoration:none}.topright a:hover{text-decoration:underline}
+    .eyebrow{font-size:11px;font-weight:900;letter-spacing:.2em;text-transform:uppercase}.hero{padding-top:54px}.hero-meta{display:flex;justify-content:space-between;align-items:center;gap:12px}.hero h1{font-size:clamp(76px,14.8vw,225px);letter-spacing:-.105em;line-height:.78;font-weight:950;margin:42px 0 30px;white-space:nowrap;transform:translateX(-.02em)}.hero-sub{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin:0 0 55px}.tagline{font-size:clamp(28px,4.3vw,66px);line-height:.98;font-weight:850;letter-spacing:-.065em;max-width:650px;margin:0}.intro{width:320px;max-width:43%;line-height:1.48;font-size:15px;font-weight:600}.marker{display:inline-block;background:var(--orange);color:var(--ink);border-radius:100px;padding:4px 10px;transform:rotate(-3deg)}
+    .maphero{position:relative;background:#c3d9d0;border:1px solid var(--ink);height:420px;overflow:hidden}.maphero svg{width:100%;height:100%;display:block}.map-note{position:absolute;top:18px;left:20px;background:var(--ink);color:#fff;padding:12px 16px;font-size:10px;font-weight:900;letter-spacing:.16em}.map-sticker{position:absolute;right:24px;bottom:26px;background:var(--orange);border:1px solid var(--ink);width:160px;height:160px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:900;font-size:20px;letter-spacing:-.06em;line-height:1.04;transform:rotate(12deg)}.caption{font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-top:12px;color:var(--soft);font-weight:800}
+    .section{padding-top:100px;padding-bottom:90px;border-bottom:1px solid var(--ink)}.section-head{display:grid;grid-template-columns:1fr 2fr;gap:25px;margin-bottom:42px}.section h2{font-size:clamp(38px,5.2vw,77px);line-height:.98;letter-spacing:-.075em;margin:0;font-weight:900}.section-desc{max-width:620px;font-size:18px;line-height:1.48;font-weight:500}.section-desc strong{font-weight:850}
+    .research{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.quote{background:var(--card);border:1px solid var(--ink);padding:25px;display:flex;flex-direction:column;min-height:270px}.quote .num{font-weight:950;font-size:13px}.quote blockquote{font-size:clamp(21px,2.3vw,32px);font-weight:850;line-height:1.13;letter-spacing:-.055em;margin:35px 0 auto}.quote .source{font-size:11px;line-height:1.55;padding-top:25px;font-weight:700;color:var(--soft)}.insight{margin-top:16px;background:var(--ink);color:white;padding:30px 34px;display:flex;gap:30px;align-items:center;justify-content:space-between}.insight b{font-size:clamp(20px,3vw,40px);letter-spacing:-.05em;line-height:1.05;max-width:800px}.insight span{font-size:11px;letter-spacing:.14em;white-space:nowrap;text-transform:uppercase;color:var(--green);font-weight:850}
+    .experience{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.feature{padding:34px;background:var(--card);border:1px solid var(--ink);min-height:290px;display:flex;flex-direction:column}.feature-no{font-size:12px;letter-spacing:.17em;font-weight:900}.feature h3{font-size:clamp(35px,4vw,56px);letter-spacing:-.08em;line-height:1;margin:40px 0 18px}.feature p{font-size:16px;line-height:1.5;max-width:420px;margin:0}.feature .foot{font-size:11px;font-weight:900;letter-spacing:.13em;text-transform:uppercase;margin-top:auto;padding-top:30px}.focusbox{background:var(--green);border:1px solid var(--ink);padding:40px;display:grid;grid-template-columns:1fr 1.4fr;gap:20px}.focusbox .big{font-size:clamp(80px,12vw,170px);line-height:.75;font-weight:950;letter-spacing:-.11em}.focusbox p{font-size:20px;line-height:1.45;margin:0;font-weight:600}.focusbox strong{font-weight:900}
+    .timeline{border-top:2px solid var(--ink)}.row{display:grid;grid-template-columns:160px 150px 1fr;gap:18px;align-items:start;padding:24px 0;border-bottom:1px solid var(--line)}.when{font-size:13px;font-weight:900}.phase{font-size:11px;text-transform:uppercase;letter-spacing:.16em;font-weight:900}.row p{margin:0;font-size:17px;line-height:1.48}.tech{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.techitem{border:1px solid var(--ink);padding:21px;background:var(--card);min-height:140px}.techitem h3{margin:0 0 15px;font-size:18px;letter-spacing:-.04em}.techitem p{margin:0;color:var(--soft);font-size:13px;line-height:1.45}
+    .footnote{margin-top:20px;color:var(--soft);font-size:13px;line-height:1.5;max-width:880px}.footer{padding:35px 0 50px;display:flex;justify-content:space-between;gap:25px;align-items:end}.footer h2{font-size:clamp(48px,9vw,130px);letter-spacing:-.1em;line-height:.8;margin:0}.footer p{font-size:12px;font-weight:800;line-height:1.7;text-align:right;margin:0}
+    @media(max-width:820px){.hero h1{font-size:14vw}.section-head{grid-template-columns:1fr;gap:18px}.research,.tech{grid-template-columns:1fr 1fr}.research .quote:last-child{grid-column:1/-1;min-height:210px}.focusbox{grid-template-columns:1fr}.maphero{height:330px}.intro{font-size:13px}.row{grid-template-columns:110px 1fr}.row p{grid-column:2}.insight{display:block}.insight span{display:block;margin-top:18px}}
+    @media(max-width:560px){.wrap{padding:0 5%}.topright{gap:12px;font-size:9px}.hero{padding-top:28px}.hero h1{margin:38px 0 30px;font-size:14.6vw}.hero-sub{display:block;margin-bottom:38px}.tagline{font-size:38px}.intro{max-width:none;width:auto;font-size:14px;margin-top:22px}.maphero{height:280px}.map-sticker{width:105px;height:105px;font-size:14px;right:14px;bottom:14px}.section{padding-top:65px;padding-bottom:65px}.research,.experience,.tech{grid-template-columns:1fr}.research .quote:last-child{grid-column:auto}.quote{min-height:220px}.quote blockquote{margin-top:24px}.feature{min-height:235px}.focusbox{padding:24px}.focusbox p{font-size:17px}.row{grid-template-columns:1fr;gap:6px}.row p{grid-column:auto}.footer{display:block}.footer p{text-align:left;margin-top:26px}.insight{padding:26px}}
+    @media(prefers-reduced-motion:no-preference){.map-sticker{transition:transform .3s}.maphero:hover .map-sticker{transform:rotate(0)}.topright a{transition:opacity .2s}.topright a:hover{opacity:.6}}
+  .evidence-links{display:flex;gap:12px;flex-wrap:wrap;padding:18px 0 0}.evidence-links a{display:inline-flex;gap:25px;justify-content:space-between;align-items:center;padding:15px 18px;text-decoration:none;background:var(--card);border:1px solid var(--ink);font-size:11px;font-weight:900;letter-spacing:.1em}.evidence-links a:hover,.evidence-links a:focus-visible{background:var(--green)}@media(max-width:560px){.evidence-links a{width:100%}}
+  </style>
+</head>
+<body>
+  <header class="top wrap"><a class="brand" href="#top">ELSEWHERE®</a><nav class="topright" aria-label="On-page navigation"><a href="#people">The problem</a><a href="#roadmap">Roadmap</a><a href="agent-interview.html">Agent log ↗</a><a href="user-interviews.html">User interviews ↗</a></nav></header>
+  <main id="top">
+    <div class="wrap hero">
+      <div class="hero-meta eyebrow"><span>Design, Build, Ship / Project Proposal</span><span>NYC · Autumn 2026</span></div>
+      <h1>ELSEWHERE<span style="color:var(--orange)">.</span></h1>
+      <div class="hero-sub"><h2 class="tagline">Get lost.<br><span class="marker">Find something.</span></h2><div class="intro"><strong>A city discovery experience for New York students.</strong><br>Turn scattered saved places and personal interests into realistic, surprising routes worth actually taking.</div></div>
+      <div class="maphero" role="img" aria-label="Editorial illustration of a stylized New York city exploration route. Decorative, not an actual navigational map.">
+        <svg viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="1200" height="420" fill="#b9d3c7"/>
+          <path d="M-50 315 Q130 270 240 352 T530 370 T845 420 L-20 460Z" fill="#e9e8de"/>
+          <path d="M310-50 L435-50 330 470 230 470Z" fill="#e9e8de"/>
+          <path d="M600-20 Q735 40 865 10 T1270 0 L1270 440 Q1050 400 905 435 T620 420Z" fill="#e9e8de"/>
+          <g stroke="#9cb5a9" stroke-width="2" fill="none" opacity=".7">
+            <path d="M-40 70 L380 220 M-20 145 L400 285 M0 225 L410 350 M-20 350 L400 410"/>
+            <path d="M270-10 L160 420 M345-10 L230 420 M390 0 L285 420"/>
+            <path d="M610 40 L1210 140 M600 110 L1220 220 M600 200 L1220 300 M610 300 L1220 390 M715 0 L605 420 M875 0 L785 420 M1030 0 L955 420"/>
+          </g>
+          <g fill="none" stroke="#173f35" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M280 385 C330 305 290 240 347 169 S410 80 390 5" stroke-width="8" stroke-dasharray="1 16"/>
+            <path d="M280 385 C330 305 290 240 347 169 S410 80 390 5" stroke="#f56636" stroke-width="5"/>
+            <path d="M347 169 Q480 200 620 167 T960 100" stroke-width="7" stroke="#153d34"/>
+          </g>
+          <g stroke="#173f35" stroke-width="3" fill="#f9f6ed">
+            <circle cx="305" cy="317" r="10"/><circle cx="347" cy="169" r="10"/><circle cx="385" cy="39" r="10"/><circle cx="620" cy="167" r="10"/><circle cx="960" cy="100" r="10"/>
+          </g>
+          <g font-family="Arial, sans-serif" fill="#173b31" font-size="16" font-weight="900" letter-spacing="2">
+            <text x="130" y="90" transform="rotate(-78 130 90)">HUDSON RIVER</text><text x="460" y="350" transform="rotate(-78 460 350)">EAST RIVER</text>
+            <text x="750" y="60">QUEENS</text><text x="845" y="355">BROOKLYN</text>
+          </g>
+          <g font-family="Arial,sans-serif" font-weight="900" font-size="17" fill="#172721"><text x="360" y="155">01 / COFFEE</text><text x="635" y="145">02 / BOOKS</text><text x="972" y="88">03 / FIND</text></g>
+        </svg>
+        <div class="map-note">FIELD NOTES / 001 — NEW YORK CITY</div>
+        <div class="map-sticker">A DIFFERENT<br>WAY TO<br>EXPLORE ↗</div>
+      </div>
+      <div class="caption">Conceptual route illustration · Not a literal map or recommended itinerary</div><div class="evidence-links"><a href="agent-interview.html">READ THE PROJECT SCOPING INTERVIEW <span>↗</span></a><a href="user-interviews.html">READ ALL THREE USER INTERVIEWS <span>↗</span></a></div>
+    </div>
+    <section id="people" class="section wrap">
+      <div class="section-head"><div class="eyebrow">01 / The people</div><div><h2>Saved everywhere.<br>Visited nowhere.</h2><p class="section-desc">NYC students discover places on Instagram, through friends, and on Google Maps. But saving a location is easy; turning it into an actual afternoon out is harder. <strong>I spoke with three students about their most recent city outings.</strong></p></div></div>
+      <div class="research">
+        <article class="quote"><div class="num">01 / BEATRICE · UNDERGRADUATE</div><blockquote>“I just never really look at them again.”</blockquote><div class="source">On places saved in Google Maps. Her East Village outing was spontaneous, and deciding where to eat took too long.</div></article>
+        <article class="quote"><div class="num">02 / VANCE · MASTER'S</div><blockquote>“It's hard to know how many stops you can realistically fit into one afternoon.”</blockquote><div class="source">On exploring Roosevelt Island. Distance and time make otherwise interesting saved places difficult to visit.</div></article>
+        <article class="quote"><div class="num">03 / JOSH · MASTER'S</div><blockquote>“I probably have like 30 restaurant screenshots on my phone.”</blockquote><div class="source">On collecting NYC recommendations. His Astoria group spent roughly 20 minutes deciding where to eat.</div></article>
+      </div>
+      <div class="insight"><b>The problem isn't a lack of recommendations. It's turning inspiration into a plan.</b><a href="user-interviews.html" style="color:var(--green);font-weight:850;white-space:nowrap;font-size:12px">Full interview log ↗</a></div>
+    </section>
+    <section id="vision" class="section wrap">
+      <div class="section-head"><div class="eyebrow">02 / The idea</div><div><h2>From “one day”<br>to today.</h2><p class="section-desc">ELSEWHERE connects the places you want to go with the time you actually have. Start with a sentence, refine your preferences, then take a route grounded in real NYC locations—not AI-invented businesses.</p></div></div>
+      <div class="experience">
+        <article class="feature"><div class="feature-no">01 / CREATE</div><h3>Plan an<br>afternoon.</h3><p>“Three hours. Bookstores, coffee, and something unexpected.” Describe a mood or choose time, budget, neighborhood, and how you want to get around. Get a plausible route you can edit.</p><div class="foot">AI-assisted itinerary · Verified places</div></article>
+        <article class="feature"><div class="feature-no">02 / COLLECT</div><h3>Make the city<br>your own.</h3><p>Save interesting spots and journeys in My NYC Atlas. Bring saved places back into new plans, rather than leaving them buried in screenshots and bookmarks.</p><div class="foot">Personal map · Saved places & routes</div></article>
+      </div>
+    </section>
+    <section class="section wrap">
+      <div class="section-head"><div class="eyebrow">03 / The focus</div><div><h2>Deep on design.<br>Useful by default.</h2><p class="section-desc">My focus is <strong>Design</strong>: an interface people understand without instruction, where expressive editorial visual language and precise map interactions make discovery feel personal.</p></div></div>
+      <div class="focusbox"><div class="big">DES<br>IGN<span style="color:var(--orange)">.</span></div><p><strong>NYC editorial × modern atlas × playful interaction.</strong><br><br>I want to go deep on visual identity, flows, accessible contrast, responsive maps, clear states, and subtle motion that helps people act. AI supports the experience; the design is what I will refine most.</p></div>
+    </section>
+    <section id="roadmap" class="section wrap">
+      <div class="section-head"><div class="eyebrow">04 / The roadmap</div><div><h2>A small first trip.<br>A bigger world.</h2><p class="section-desc">Start with an end-to-end NYC experience; learn from real use before adding complexity.</p></div></div>
+      <div class="timeline">
+        <div class="row"><div class="when">NOV 10</div><div class="phase">Start</div><p>Validate the location data source and AI costs; refine the user flow and design prototypes. Build and test the smallest trustworthy route-planning path first.</p></div>
+        <div class="row"><div class="when">NOV 17</div><div class="phase">V1 · Live</div><p>Users can sign in, describe an outing, get a route based on real NYC places, adjust the plan, and save places or routes in My NYC Atlas. Deploy a usable site.</p></div>
+        <div class="row"><div class="when">NOV 24</div><div class="phase">Feedback</div><p>No class. Test the live experience with students, watch where they hesitate, and refine the highest-friction interactions.</p></div>
+        <div class="row"><div class="when">DEC 01</div><div class="phase">V2 · Fair</div><p>Polish the visual system and map interactions; add a lightweight NYC Journal for photos and memories if the core experience is solid. Present a tested, cohesive product.</p></div>
+      </div>
+    </section>
+    <section class="section wrap">
+      <div class="section-head"><div class="eyebrow">05 / The tools</div><div><h2>Technology in<br>service of the idea.</h2><p class="section-desc">A practical stack for a real, end-to-end product. Keep mapping and location data grounded in actual sources, and choose AI and API usage that can stay within student/free-tier budgets.</p></div></div>
+      <div class="tech">
+        <div class="techitem"><h3>Next.js + TypeScript</h3><p>Product interface and typed application logic.</p></div>
+        <div class="techitem"><h3>Tailwind CSS</h3><p>Responsive design system and detailed UI refinement.</p></div>
+        <div class="techitem"><h3>MapLibre GL JS</h3><p>Interactive maps and journey visualization.</p></div>
+        <div class="techitem"><h3>Supabase</h3><p>Saved locations, routes, and row-level access controls.</p></div>
+        <div class="techitem"><h3>Clerk</h3><p>Sign-in and personal collections.</p></div>
+        <div class="techitem"><h3>AI model API · TBD</h3><p>Understand preferences and compose routes from verified locations.</p></div>
+        <div class="techitem"><h3>Real place data · TBD</h3><p>OpenStreetMap/open datasets and curated spots, pending coverage and terms checks.</p></div>
+        <div class="techitem"><h3>Claude Desktop + MCP/CLI</h3><p>Supabase MCP, Clerk CLI, Git/GitHub, and Vercel CLI for iterative development and deployment.</p></div>
+      </div>
+      <p class="footnote"><strong>Agent workflow:</strong> Claude Desktop is the development agent; project-scoped Supabase MCP assists with database access, Clerk CLI supports authentication setup, and Git/GitHub plus Vercel CLI support versioning and deployment. These are planned tools for the final project, not claims that ELSEWHERE is already built. <a href="agent-interview.html">Read the scoping interview ↗</a></p><p class="footnote"><strong>Cost & accuracy plan:</strong> Check each provider's free-tier terms and usage limits before implementation. Use verified place records; calculate travel distances or times from appropriate routing data; label uncertainty. Do not invent opening hours or recommendations and present them as facts. Defer social import, weather-aware rerouting, and group collaboration until after V1.</p>
+    </section>
+  </main>
+  <footer class="footer wrap"><h2>GO<br>ELSEWHERE<span style="color:var(--orange)">.</span></h2><p>DESIGN, BUILD, SHIP · AUTUMN 2026<br>PROJECT PROPOSAL · NYC FIRST<br>GET LOST. FIND SOMETHING.</p></footer>
+</body>
+</html>
