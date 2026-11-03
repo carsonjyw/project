@@ -81,3 +81,22 @@ The conversation helped me narrow ELSEWHERE into a realistic
 end-to-end project with Design as its primary focus.
 
 [Read the Agent Interview Log](./agentconvo.md)
+
+## Step 4 — User Interviews
+
+I interviewed three students to understand how they discover
+and explore places in New York City.
+
+- **Beatrice (Undergraduate):** Saves interesting places but rarely revisits them.
+- **Vance (Master's Student):** Struggles to fit destinations into a realistic afternoon.
+- **Josh (Master's Student):** Collects restaurant recommendations but finds group decisions time-consuming.
+
+### Key Insight
+
+Finding interesting places isn't the main challenge.
+Turning scattered recommendations into realistic outings is.
+
+These interviews helped validate the core problem ELSEWHERE
+aims to solve.
+
+[Read the User Interview Log](./interview.md)
