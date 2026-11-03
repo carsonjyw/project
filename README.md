@@ -70,3 +70,14 @@ Users will be able to:
 5. Save places and itineraries to their personal NYC Atlas.
 
 My goal is to build something that is both visually distinctive and genuinely useful.
+
+## Step 3 — Agent Interview
+
+I worked with an AI agent through a one-question-at-a-time
+interview to refine the concept, target users, feature scope,
+design direction, development roadmap, and technical approach.
+
+The conversation helped me narrow ELSEWHERE into a realistic
+end-to-end project with Design as its primary focus.
+
+[Read the Agent Interview Log](./agentconvo.md)
