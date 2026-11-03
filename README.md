@@ -40,3 +40,33 @@ ELSEWHERE will help them discover real places, organize a feasible route, and sa
 I want ELSEWHERE to feel less like a conventional travel planner and more like an interactive city guide—combining editorial design, a modern atlas, and playful but purposeful interactions.
 
 The goal is to make exploring the city feel exciting while keeping the experience practical and easy to use.
+
+## Step 2 — Choose Your Focus
+
+### Selected Focus: Design
+
+For ELSEWHERE, I chose **Design** as my primary focus.
+
+I want to create a city discovery experience that feels different from a traditional travel planner. Instead of presenting users with endless lists of places, ELSEWHERE should make exploring New York City feel exciting, intuitive, and personal.
+
+The visual direction combines **NYC editorial design, a modern atlas, and experimental creative interactions**.
+
+I want to go deeper in three areas:
+
+- **Visual Identity:** Develop a distinctive design language inspired by New York City's neighborhoods, maps, and editorial culture.
+- **User Experience:** Make it easy to move from a vague idea to a realistic itinerary without overwhelming the user.
+- **Interaction Design:** Explore map-based navigation, thoughtful animations, and microinteractions that make the experience engaging without sacrificing usability.
+
+### End-to-End Functionality
+
+Although Design is my main focus, ELSEWHERE will still be a functional product.
+
+Users will be able to:
+
+1. Sign up and sign in.
+2. Discover real places in New York City.
+3. Generate personalized itineraries based on their interests, budget, and available time.
+4. View their routes on an interactive map.
+5. Save places and itineraries to their personal NYC Atlas.
+
+My goal is to build something that is both visually distinctive and genuinely useful.
